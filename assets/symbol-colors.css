@@ -1,0 +1,492 @@
+@charset "utf-8";
+/* 3-1-2015, 21:05 */
+/* All CSS3 named colors
+   http://dev.w3.org/csswg/css-color-3/#svg-color
+*/
+.col-aliceblue:before {
+  color: #f0f8ff;
+  text-shadow: 0 0 5px #0065bd;
+}
+.col-antiquewhite:before {
+  color: #faebd7;
+  text-shadow: 0 0 5px #8d5812;
+}
+.col-aqua:before {
+  color: #00ffff;
+  text-shadow: 0 0 5px #000000;
+}
+.col-aquamarine:before {
+  color: #7fffd4;
+  text-shadow: 0 0 5px #004c32;
+}
+.col-azure:before {
+  color: #f0ffff;
+  text-shadow: 0 0 5px #00bdbd;
+}
+.col-beige:before {
+  color: #f5f5dc;
+  text-shadow: 0 0 5px #7c7c23;
+}
+.col-bisque:before {
+  color: #ffe4c4;
+  text-shadow: 0 0 5px #914f00;
+}
+.col-black:before {
+  color: #000000;
+}
+.col-blanchedalmond:before {
+  color: #ffebcd;
+  text-shadow: 0 0 5px #9a5c00;
+}
+.col-blue:before {
+  color: #0000ff;
+}
+.col-blueviolet:before {
+  color: #8a2be2;
+}
+.col-brown:before {
+  color: #a52a2a;
+}
+.col-burlywood:before {
+  color: #deb887;
+}
+.col-cadetblue:before {
+  color: #5f9ea0;
+}
+.col-chartreuse:before {
+  color: #7fff00;
+  text-shadow: 0 0 5px #000000;
+}
+.col-chocolate:before {
+  color: #d2691e;
+}
+.col-coral:before {
+  color: #ff7f50;
+}
+.col-cornflowerblue:before {
+  color: #6495ed;
+}
+.col-cornsilk:before {
+  color: #fff8dc;
+  text-shadow: 0 0 5px #a98700;
+}
+.col-crimson:before {
+  color: #dc143c;
+}
+.col-cyan:before {
+  color: #00ffff;
+  text-shadow: 0 0 5px #000000;
+}
+.col-darkblue:before {
+  color: #00008b;
+}
+.col-darkcyan:before {
+  color: #008b8b;
+}
+.col-darkgoldenrod:before {
+  color: #b8860b;
+}
+.col-darkgray:before {
+  color: #a9a9a9;
+}
+.col-darkgreen:before {
+  color: #006400;
+}
+.col-darkgrey:before {
+  color: #a9a9a9;
+}
+.col-darkkhaki:before {
+  color: #bdb76b;
+}
+.col-darkmagenta:before {
+  color: #8b008b;
+}
+.col-darkolivegreen:before {
+  color: #556b2f;
+}
+.col-darkorange:before {
+  color: #ff8c00;
+}
+.col-darkorchid:before {
+  color: #9932cc;
+}
+.col-darkred:before {
+  color: #8b0000;
+}
+.col-darksalmon:before {
+  color: #e9967a;
+}
+.col-darkseagreen:before {
+  color: #8fbc8f;
+}
+.col-darkslateblue:before {
+  color: #483d8b;
+}
+.col-darkslategray:before {
+  color: #2f4f4f;
+}
+.col-darkslategrey:before {
+  color: #2f4f4f;
+}
+.col-darkturquoise:before {
+  color: #00ced1;
+}
+.col-darkviolet:before {
+  color: #9400d3;
+}
+.col-deeppink:before {
+  color: #ff1493;
+}
+.col-deepskyblue:before {
+  color: #00bfff;
+}
+.col-dimgray:before {
+  color: #696969;
+}
+.col-dimgrey:before {
+  color: #696969;
+}
+.col-dodgerblue:before {
+  color: #1e90ff;
+}
+.col-firebrick:before {
+  color: #b22222;
+}
+.col-floralwhite:before {
+  color: #fffaf0;
+  text-shadow: 0 0 5px #bd7e00;
+}
+.col-forestgreen:before {
+  color: #228b22;
+}
+.col-fuchsia:before {
+  color: #ff00ff;
+}
+.col-gainsboro:before {
+  color: #dcdcdc;
+  text-shadow: 0 0 5px #434343;
+}
+.col-ghostwhite:before {
+  color: #f8f8ff;
+  text-shadow: 0 0 5px #0000c5;
+}
+.col-gold:before {
+  color: #ffd700;
+  text-shadow: 0 0 5px #000000;
+}
+.col-goldenrod:before {
+  color: #daa520;
+}
+.col-gray:before {
+  color: #808080;
+}
+.col-green:before {
+  color: #008000;
+}
+.col-greenyellow:before {
+  color: #adff2f;
+  text-shadow: 0 0 5px #000000;
+}
+.col-grey:before {
+  color: #808080;
+}
+.col-honeydew:before {
+  color: #f0fff0;
+  text-shadow: 0 0 5px #00bd00;
+}
+.col-hotpink:before {
+  color: #ff69b4;
+}
+.col-indianred:before {
+  color: #cd5c5c;
+}
+.col-indigo:before {
+  color: #4b0082;
+}
+.col-ivory:before {
+  color: #fffff0;
+  text-shadow: 0 0 5px #bdbd00;
+}
+.col-khaki:before {
+  color: #f0e68c;
+  text-shadow: 0 0 5px #413c09;
+}
+.col-lavender:before {
+  color: #e6e6fa;
+  text-shadow: 0 0 5px #1d1d91;
+}
+.col-lavenderblush:before {
+  color: #fff0f5;
+  text-shadow: 0 0 5px #bd003f;
+}
+.col-lawngreen:before {
+  color: #7cfc00;
+  text-shadow: 0 0 5px #000000;
+}
+.col-lemonchiffon:before {
+  color: #fffacd;
+  text-shadow: 0 0 5px #9a8b00;
+}
+.col-lightblue:before {
+  color: #add8e6;
+}
+.col-lightcoral:before {
+  color: #f08080;
+}
+.col-lightcyan:before {
+  color: #e0ffff;
+  text-shadow: 0 0 5px #00adad;
+}
+.col-lightgoldenrodyellow:before {
+  color: #fafad2;
+  text-shadow: 0 0 5px #8b8b0f;
+}
+.col-lightgray:before {
+  color: #d3d3d3;
+}
+.col-lightgreen:before {
+  color: #90ee90;
+}
+.col-lightgrey:before {
+  color: #d3d3d3;
+}
+.col-lightpink:before {
+  color: #ffb6c1;
+}
+.col-lightsalmon:before {
+  color: #ffa07a;
+}
+.col-lightseagreen:before {
+  color: #20b2aa;
+}
+.col-lightskyblue:before {
+  color: #87cefa;
+}
+.col-lightslategray:before {
+  color: #778899;
+}
+.col-lightslategrey:before {
+  color: #778899;
+}
+.col-lightsteelblue:before {
+  color: #b0c4de;
+}
+.col-lightyellow:before {
+  color: #ffffe0;
+  text-shadow: 0 0 5px #adad00;
+}
+.col-lime:before {
+  color: #00ff00;
+  text-shadow: 0 0 5px #000000;
+}
+.col-limegreen:before {
+  color: #32cd32;
+}
+.col-linen:before {
+  color: #faf0e6;
+  text-shadow: 0 0 5px #91571d;
+}
+.col-magenta:before {
+  color: #ff00ff;
+}
+.col-maroon:before {
+  color: #800000;
+}
+.col-mediumaquamarine:before {
+  color: #66cdaa;
+}
+.col-mediumblue:before {
+  color: #0000cd;
+}
+.col-mediumorchid:before {
+  color: #ba55d3;
+}
+.col-mediumpurple:before {
+  color: #9370db;
+}
+.col-mediumseagreen:before {
+  color: #3cb371;
+}
+.col-mediumslateblue:before {
+  color: #7b68ee;
+}
+.col-mediumspringgreen:before {
+  color: #00fa9a;
+  text-shadow: 0 0 5px #000000;
+}
+.col-mediumturquoise:before {
+  color: #48d1cc;
+}
+.col-mediumvioletred:before {
+  color: #c71585;
+}
+.col-midnightblue:before {
+  color: #191970;
+}
+.col-mintcream:before {
+  color: #f5fffa;
+  text-shadow: 0 0 5px #00c261;
+}
+.col-mistyrose:before {
+  color: #ffe4e1;
+  text-shadow: 0 0 5px #ae1100;
+}
+.col-moccasin:before {
+  color: #ffe4b5;
+  text-shadow: 0 0 5px #825300;
+}
+.col-navajowhite:before {
+  color: #ffdead;
+  text-shadow: 0 0 5px #7a4900;
+}
+.col-navy:before {
+  color: #000080;
+}
+.col-oldlace:before {
+  color: #fdf5e6;
+  text-shadow: 0 0 5px #a46f0d;
+}
+.col-olive:before {
+  color: #808000;
+}
+.col-olivedrab:before {
+  color: #6b8e23;
+}
+.col-orange:before {
+  color: #ffa500;
+}
+.col-orangered:before {
+  color: #ff4500;
+}
+.col-orchid:before {
+  color: #da70d6;
+}
+.col-palegoldenrod:before {
+  color: #eee8aa;
+  text-shadow: 0 0 5px #554f11;
+}
+.col-palegreen:before {
+  color: #98fb98;
+  text-shadow: 0 0 5px #045d04;
+}
+.col-paleturquoise:before {
+  color: #afeeee;
+  text-shadow: 0 0 5px #135858;
+}
+.col-palevioletred:before {
+  color: #db7093;
+}
+.col-papayawhip:before {
+  color: #ffefd5;
+  text-shadow: 0 0 5px #a26400;
+}
+.col-peachpuff:before {
+  color: #ffdab9;
+  text-shadow: 0 0 5px #863f00;
+}
+.col-peru:before {
+  color: #cd853f;
+}
+.col-pink:before {
+  color: #ffc0cb;
+}
+.col-plum:before {
+  color: #dda0dd;
+}
+.col-powderblue:before {
+  color: #b0e0e6;
+}
+.col-purple:before {
+  color: #800080;
+}
+.col-red:before {
+  color: #ff0000;
+}
+.col-rosybrown:before {
+  color: #bc8f8f;
+}
+.col-royalblue:before {
+  color: #4169e1;
+}
+.col-saddlebrown:before {
+  color: #8b4513;
+}
+.col-salmon:before {
+  color: #fa8072;
+}
+.col-sandybrown:before {
+  color: #f4a460;
+}
+.col-seagreen:before {
+  color: #2e8b57;
+}
+.col-seashell:before {
+  color: #fff5ee;
+  text-shadow: 0 0 5px #bb4d00;
+}
+.col-sienna:before {
+  color: #a0522d;
+}
+.col-silver:before {
+  color: #c0c0c0;
+}
+.col-skyblue:before {
+  color: #87ceeb;
+}
+.col-slateblue:before {
+  color: #6a5acd;
+}
+.col-slategray:before {
+  color: #708090;
+}
+.col-slategrey:before {
+  color: #708090;
+}
+.col-snow:before {
+  color: #fffafa;
+  text-shadow: 0 0 5px #c70000;
+}
+.col-springgreen:before {
+  color: #00ff7f;
+  text-shadow: 0 0 5px #000000;
+}
+.col-steelblue:before {
+  color: #4682b4;
+}
+.col-tan:before {
+  color: #d2b48c;
+}
+.col-teal:before {
+  color: #008080;
+}
+.col-thistle:before {
+  color: #d8bfd8;
+}
+.col-tomato:before {
+  color: #ff6347;
+}
+.col-turquoise:before {
+  color: #40e0d0;
+}
+.col-violet:before {
+  color: #ee82ee;
+}
+.col-wheat:before {
+  color: #f5deb3;
+  text-shadow: 0 0 5px #68490e;
+}
+.col-white:before {
+  color: #ffffff;
+  text-shadow: 0 0 5px #666666;
+}
+.col-whitesmoke:before {
+  color: #f5f5f5;
+  text-shadow: 0 0 5px #5c5c5c;
+}
+.col-yellow:before {
+  color: #ffff00;
+  text-shadow: 0 0 5px #000000;
+}
+.col-yellowgreen:before {
+  color: #9acd32;
+}
