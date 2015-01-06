@@ -572,6 +572,12 @@ class SymbolPicker extends InputWidget {
         'spin',
     ];
 
+    /**
+     * @var array
+     * HTML options of the buttons
+     */
+    public $buttonOptions = [];
+
     protected $parts = [];
 
     public function init()  {
@@ -599,6 +605,8 @@ class SymbolPicker extends InputWidget {
         if (count($extra)) $this->parts['extra'] = implode(' ', $extra);
 
         Html::addCssClass($this->options, 'well');
+        $this->buttonOptions['type'] = 'button';    // see http://wtfhtmlcss.com/#buttons-type
+
         $this->register();
     }
 
@@ -639,9 +647,7 @@ class SymbolPicker extends InputWidget {
     protected function renderIcon()    {
         return $this->labels['icon'] ? ButtonDropdown::widget([
             'label' => $this->labels['icon'],
-            'options' => [
-                'type' => 'button'
-            ],
+            'options' => $this->buttonOptions,
             'dropdown' => [
                 'id' => 'sp-dd-icon',
                 'encodeLabels' => false,
@@ -655,9 +661,7 @@ class SymbolPicker extends InputWidget {
     protected function renderColor()    {
         return $this->labels['color'] ? ButtonDropdown::widget([
             'label' => $this->labels['color'],
-            'options' => [
-                'type' => 'button'
-            ],
+            'options' => $this->buttonOptions,
             'dropdown' => [
                 'id' => 'sp-dd-col',
                 'encodeLabels' => false,
@@ -671,9 +675,7 @@ class SymbolPicker extends InputWidget {
     protected function renderEffect()    {
         return $this->labels['effect'] ? ButtonDropdown::widget([
             'label' => $this->labels['effect'],
-            'options' => [
-                'type' => 'button'
-            ],
+            'options' => $this->buttonOptions,
             'dropdown' => [
                 'id' => 'sp-dd-eff',
                 'encodeLabels' => false,
