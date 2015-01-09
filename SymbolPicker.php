@@ -624,6 +624,11 @@ class SymbolPicker extends InputWidget {
                 'id' => 'sp-ht'
             ]);
         }
+        else {
+            echo Html::HiddenInput($this->name, $this->value, [
+                'id' => 'sp-ht'
+            ]);
+        }
     }
 
     protected function renderDropdowns()    {
