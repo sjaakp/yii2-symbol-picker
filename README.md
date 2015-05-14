@@ -56,7 +56,7 @@ For instance, to associate **SymbolPicker** with the attribute `'icon'` in a for
 **SymbolPicker** runs 'out of the box'. It has the following options to modify it's behaviour:
 
 - **labels**: list of labels used by the widget. If a label is set to `false`, the corresponding element is not rendered.
-- **icons**: list of selectable Font Awesome icons. Each item is the class name of an icon, without the `'fa-'` part. So, for instance `'calculator'` refers to the `'fa-calculator'` icon. Default: all of the Font Awesome icons, excluding the aliases. Version 4.2. See: [http://fontawesome.io/icons/](http://fontawesome.io/icons/).
+- **icons**: list of selectable Font Awesome icons. Each item is the class name of an icon, without the `'fa-'` part. So, for instance `'calculator'` refers to the `'fa-calculator'` icon. Default: all of the Font Awesome icons, excluding the aliases. Version 4.3. See: [http://fontawesome.io/icons/](http://fontawesome.io/icons/).
 - **colors**: list of selectable colors. Each item is a color name, which will generate a `'col-***'` color class name. For instance `'darkblue'` refers to the class name `'col-darkblue'`. Default: a selection of CSS3 named colors.
 - **effects**: list of selectable Font Awesome effects. Each item is the class name of an effect, without the `'fa-'` part. So, for instance `'flip-horizontal'` refers to the `'fa-flip-horizontal'` effect. Default: most of the Font Awesome effects. Version 4.2.See: [http://fontawesome.io/examples/#rotated-flipped](http://fontawesome.io/examples/#rotated-flipped).
 - **buttonOptions**: array of HTML options for the dropdown buttons. Default: `[]` (empty array). You may use this to set the CSS class of the buttons.
