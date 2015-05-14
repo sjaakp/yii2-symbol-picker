@@ -2,6 +2,7 @@
 /**
  * MIT licence
  * Version 1.0
+ * 1.0.1 updated for Font Awesome 4.3 (14-05-2015)
  * Sjaak Priester, Amsterdam 05-01-2015.
  *
  * Symbolpicker Widget for Yii 2.0
@@ -9,7 +10,7 @@
  * Widget to select a symbol from the Font Awesome collection in Yii 2.0 PHP Framework.
  *
  * Requirement: Font Awesome must be loaded.
- * An easy way is to add the value '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' to the AppAsset->css array.
+ * An easy way is to add the value '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' to the AppAsset->css array.
  * See: http://fontawesome.io/get-started/ .
  */
 
@@ -33,6 +34,53 @@ class SymbolPicker extends InputWidget {
         'color' => 'Color',
         'effect' => 'Effect',
         'extra' => 'Extra classes',
+    ];
+
+    /**
+     * @var array
+     * List of selectable colors. Each item is a color name, which will generate a 'col-***' color class name.
+     * For instance 'darkblue' refers to the class name 'col-darkblue'. Color classes are in assets\symbol-colors.css.
+     * Default: a selection of CSS3 named colors.
+     * See: http://dev.w3.org/csswg/css-color-3/#svg-color
+     */
+    public $colors = [
+        'darkblue',
+        'dodgerblue',
+        'aquamarine',
+        'chartreuse',
+        'limegreen',
+        'forestgreen',
+        'olive',
+        'gold',
+        'yellow',
+        'orange',
+        'tomato',
+        'crimson',
+        'chocolate',
+        'brown',
+        'fuchsia',
+        'purple',
+        'black',
+        'dimgray',
+        'lightslategray',
+        'silver',
+        'white'
+    ];
+
+    /**
+     * @var array
+     * List of selectable Font Awesome effects. Each item is the class name of an effect, without the 'fa-' part.
+     * So, for instance 'flip-horizontal' refers to the 'fa-flip-horizontal' effect.
+     * Default: most of the Font Awesome effects. Version 4.2.
+     * See: http://fontawesome.io/examples/#rotated-flipped
+     */
+    public $effects = [
+        'rotate-90',
+        'rotate-180',
+        'rotate-270',
+        'flip-horizontal',
+        'flip-vertical',
+        'spin',
     ];
 
     /**
@@ -88,6 +136,7 @@ class SymbolPicker extends InputWidget {
         'bar-chart',
         'barcode',
         'bars',
+        'bed',
         'beer',
         'behance',
         'behance-square',
@@ -113,6 +162,7 @@ class SymbolPicker extends InputWidget {
         'bullhorn',
         'bullseye',
         'bus',
+        'buysellads',
         'calculator',
         'calendar',
         'calendar-o',
@@ -123,6 +173,8 @@ class SymbolPicker extends InputWidget {
         'caret-left',
         'caret-right',
         'caret-up',
+        'cart-arrow-down',
+        'cart-plus',
         'cc',
         'cc-amex',
         'cc-discover',
@@ -165,6 +217,7 @@ class SymbolPicker extends InputWidget {
         'comments-o',
         'compass',
         'compress',
+        'connectdevelop',
         'copy',
         'copyright',
         'credit-card',
@@ -175,10 +228,12 @@ class SymbolPicker extends InputWidget {
         'cubes',
         'cut',
         'cutlery',
+        'dashcube',
         'database',
         'delicious',
         'desktop',
         'deviantart',
+        'diamond',
         'digg',
         'dollar',
         'dot-circle-o',
@@ -206,6 +261,7 @@ class SymbolPicker extends InputWidget {
         'eyedropper',
         'eye-slash',
         'facebook',
+        'facebook-official',
         'facebook-square',
         'fast-backward',
         'fast-forward',
@@ -241,6 +297,7 @@ class SymbolPicker extends InputWidget {
         'folder-open-o',
         'font',
         'forward',
+        'forumbee',
         'foursquare',
         'frown-o',
         'gamepad',
@@ -271,6 +328,7 @@ class SymbolPicker extends InputWidget {
         'header',
         'headphones',
         'heart',
+        'heartbeat',
         'heart-o',
         'history',
         'home',
@@ -293,6 +351,7 @@ class SymbolPicker extends InputWidget {
         'lastfm',
         'lastfm-square',
         'leaf',
+        'leanpub',
         'legal',
         'lemon-o',
         'level-down',
@@ -317,10 +376,17 @@ class SymbolPicker extends InputWidget {
         'magnet',
         'male',
         'map-marker',
+        'mars',
+        'mars-double',
+        'mars-stroke',
+        'mars-stroke-h',
+        'mars-stroke-v',
         'maxcdn',
         'meanpath',
+        'medium',
         'medkit',
         'meh-o',
+        'mercury',
         'microphone',
         'microphone-slash',
         'minus',
@@ -330,8 +396,10 @@ class SymbolPicker extends InputWidget {
         'mobile',
         'money',
         'moon-o',
+        'motorcycle',
         'music',
         'newspaper-o',
+        'neuter',
         'openid',
         'outdent',
         'pagelines',
@@ -352,6 +420,7 @@ class SymbolPicker extends InputWidget {
         'pied-piper',
         'pied-piper-alt',
         'pinterest',
+        'pinterest-p',
         'pinterest-square',
         'plane',
         'play',
@@ -392,8 +461,10 @@ class SymbolPicker extends InputWidget {
         'search',
         'search-minus',
         'search-plus',
+        'sellsy',
         'send',
         'send-o',
+        'server',
         'share',
         'share-alt',
         'share-alt-square',
@@ -401,11 +472,15 @@ class SymbolPicker extends InputWidget {
         'share-square-o',
         'shekel',
         'shield',
+        'ship',
+        'shirtsinbulk',
         'shopping-cart',
         'signal',
         'sign-in',
         'sign-out',
+        'simplybuilt',
         'sitemap',
+        'skyatlas',
         'skype',
         'slack',
         'sliders',
@@ -440,10 +515,12 @@ class SymbolPicker extends InputWidget {
         'step-forward',
         'stethoscope',
         'stop',
+        'street-view',
         'strikethrough',
         'stumbleupon',
         'stumbleupon-circle',
         'subscript',
+        'subway',
         'suitcase',
         'sun-o',
         'superscript',
@@ -477,6 +554,9 @@ class SymbolPicker extends InputWidget {
         'toggle-on',
         'toggle-right',
         'toggle-up',
+        'train',
+        'transgender',
+        'transgender-alt',
         'trash',
         'trash-o',
         'tree',
@@ -499,6 +579,13 @@ class SymbolPicker extends InputWidget {
         'upload',
         'user',
         'user-md',
+        'user-plus',
+        'user-secret',
+        'user-times',
+        'venus',
+        'venus-double',
+        'venus-mars',
+        'viacoin',
         'video-camera',
         'vimeo-square',
         'vine',
@@ -509,6 +596,7 @@ class SymbolPicker extends InputWidget {
         'warning',
         'wechat',
         'weibo',
+        'whatsapp',
         'wheelchair',
         'wifi',
         'windows',
@@ -523,53 +611,6 @@ class SymbolPicker extends InputWidget {
         'youtube',
         'youtube-play',
         'youtube-square',
-    ];
-
-    /**
-     * @var array
-     * List of selectable colors. Each item is a color name, which will generate a 'col-***' color class name.
-     * For instance 'darkblue' refers to the class name 'col-darkblue'. Color classes are in assets\symbol-colors.css.
-     * Default: a selection of CSS3 named colors.
-     * See: http://dev.w3.org/csswg/css-color-3/#svg-color
-     */
-    public $colors = [
-        'darkblue',
-        'dodgerblue',
-        'aquamarine',
-        'chartreuse',
-        'limegreen',
-        'forestgreen',
-        'olive',
-        'gold',
-        'yellow',
-        'orange',
-        'tomato',
-        'crimson',
-        'chocolate',
-        'brown',
-        'fuchsia',
-        'purple',
-        'black',
-        'dimgray',
-        'lightslategray',
-        'silver',
-        'white'
-    ];
-
-    /**
-     * @var array
-     * List of selectable Font Awesome effects. Each item is the class name of an effect, without the 'fa-' part.
-     * So, for instance 'flip-horizontal' refers to the 'fa-flip-horizontal' effect.
-     * Default: most of the Font Awesome effects. Version 4.2.
-     * See: http://fontawesome.io/examples/#rotated-flipped
-     */
-    public $effects = [
-        'rotate-90',
-        'rotate-180',
-        'rotate-270',
-        'flip-horizontal',
-        'flip-vertical',
-        'spin',
     ];
 
     /**
