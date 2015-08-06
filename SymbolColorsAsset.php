@@ -15,6 +15,10 @@ class SymbolColorsAsset extends AssetBundle {
         'symbol-colors.css'
     ];
 
+    public $publishOptions = [
+        'only' => [ '*.css' ]
+    ];
+
     public function init()    {
         parent::init();
 
