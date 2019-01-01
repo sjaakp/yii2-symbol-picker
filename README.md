@@ -1,9 +1,9 @@
-YII2 Symbol Picker
+Yii2 Symbol Picker
 ==================
 
 #### Widget to select a symbol from the Font Awesome collection for Yii 2.0 PHP Framework. ####
 
-**SymbolPicker** lets you select the class name for a symbol in [Font Awesome](http://fontawesome.io/). It also lets you select class names for a color and for an additional effect.
+**SymbolPicker** lets you select the class name for a symbol in [Font Awesome](http://fontawesome.io/) (up to version 4.3). It also lets you select class names for a color and for an additional effect.
 
 A demonstration of SymbolPicker widget is [here](http://www.sjaakpriester.nl/software/symbolpicker).
 
@@ -23,7 +23,9 @@ A demonstration of SymbolPicker widget is [here](http://www.sjaakpriester.nl/sof
 	}
 	?>
 
-There are [other methods](http://fontawesome.io/get-started/) to make Font Awesome available to your site. 
+There are [other methods](http://fontawesome.io/get-started/) to make Font Awesome available to your site.
+
+**Notice** that **SymbolPicker** in its current form will not work with FontAwesome 5.0 and higher. 
 
 ## Installation ##
 
@@ -33,7 +35,7 @@ The preferred way to install **SymbolPicker** is through [Composer](https://getc
 
 Or run:
 
-`$ php composer.phar require sjaakp/yii2-symbol-picker "*"` 
+`composer require sjaakp/yii2-symbol-picker "*"` 
 
 You can manually install **SymbolPicker** by [downloading the source in ZIP-format](https://github.com/sjaakp/yii2-symbol-picker/archive/master.zip).
 
@@ -58,7 +60,7 @@ For instance, to associate **SymbolPicker** with the attribute `'icon'` in a for
 - **labels**: list of labels used by the widget. If a label is set to `false`, the corresponding element is not rendered.
 - **icons**: list of selectable Font Awesome icons. Each item is the class name of an icon, without the `'fa-'` part. So, for instance `'calculator'` refers to the `'fa-calculator'` icon. Default: all of the Font Awesome icons, excluding the aliases. Version 4.3. See: [http://fontawesome.io/icons/](http://fontawesome.io/icons/).
 - **colors**: list of selectable colors. Each item is a color name, which will generate a `'col-***'` color class name. For instance `'darkblue'` refers to the class name `'col-darkblue'`. Default: a selection of CSS3 named colors.
-- **effects**: list of selectable Font Awesome effects. Each item is the class name of an effect, without the `'fa-'` part. So, for instance `'flip-horizontal'` refers to the `'fa-flip-horizontal'` effect. Default: most of the Font Awesome effects. Version 4.2.See: [http://fontawesome.io/examples/#rotated-flipped](http://fontawesome.io/examples/#rotated-flipped).
+- **effects**: list of selectable Font Awesome effects. Each item is the class name of an effect, without the `'fa-'` part. So, for instance `'flip-horizontal'` refers to the `'fa-flip-horizontal'` effect. Default: most of the Font Awesome effects. Version 4.3.See: [http://fontawesome.io/examples/#rotated-flipped](http://fontawesome.io/examples/#rotated-flipped).
 - **buttonOptions**: array of HTML options for the dropdown buttons. Default: `[]` (empty array). You may use this to set the CSS class of the buttons.
 
 Of coarse, **SymbolPicker** also has the normal [InputWidget properties](http://www.yiiframework.com/doc-2.0/yii-widgets-inputwidget.html).
