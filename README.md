@@ -50,7 +50,7 @@ For instance, to associate **SymbolPicker** with the attribute `'icon'` in a for
     use sjaakp\symbolpicker\SymbolPicker;
         
 	...
-	<?= $form->field($model, 'icon')->widget(SymbolPicker::className()) ?>
+	<?= $form->field($model, 'icon')->widget(SymbolPicker::class) ?>
 	...
 
 #### options ####
